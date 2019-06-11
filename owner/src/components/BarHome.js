@@ -1,7 +1,7 @@
 import React, { Component, } from 'react';
 import BarForm from './BarForms';
 import BarList from './BarList';
-import { Container, } from "semantic-ui-react";
+import { Container, Header} from "semantic-ui-react";
 import axios from 'axios'
 
 
@@ -52,6 +52,8 @@ class BarHome extends Component {
   render() {
     return (
       <Container style={{ padding: "30px 0", }}>
+      <Header>New Bar Guide</Header>
+      <hr/>
         <BarForm addBar={this.addBar} />
         <br />
         <br />
